@@ -1,0 +1,18 @@
+name: Addition Workflow
+
+on:
+  push:
+
+jobs:
+  add-numbers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add Two Numbers
+        run: |
+          a=10
+          b=20
+          sum=$((a+b))
+          echo "First Number: $a"
+          echo "Second Number: $b"
+          echo "Sum = $sum"
